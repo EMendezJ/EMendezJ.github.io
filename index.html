@@ -23,30 +23,16 @@
         <a href="mailto:emeji2016@outlook.com">Email</a><a href="EmilianoMendez-CV.pdf">CV</a><a href="https://linkedin.com/in/emilianomendezjimenez">LinkedIn</a><a href="https://github.com/EMendezJ">GitHub</a>
       </p>
     </div>
-    <div class="photo"><img src="media/profile.jpg" width="576" height="720" alt="Our Unitree G1, in a hoodie and gloves, throwing a punch"></div>
+    <div class="photo"><img src="media/profile.jpg" width="600" height="750" alt="Emiliano Méndez Jiménez in a VantTec polo, with the Cerro de la Silla behind"></div>
   </div>
 
   <div class="orgs">
     <div class="org"><div class="logo"><img src="media/logo_tec.png" alt="Tecnológico de Monterrey"></div><span class="name">Tec de Monterrey</span><span class="role">B.S. Robotics</span><span class="time">2024 – 2028</span></div>
     <div class="org"><div class="logo"><img src="media/logo_vanttec.png" alt="VantTec"></div><span class="name">VantTec</span><span class="role">Humanoid Captain</span><span class="time">2025 – now</span></div>
-    <div class="org"><div class="logo"><span class="mono">AC</span></div><span class="name">Astrocor</span><span class="role">Research Intern</span><span class="time">2026 – now</span></div>
-    <div class="org"><div class="logo"><span class="mono">ADA</span></div><span class="name">ADA Labs</span><span class="role">CV Engineer</span><span class="time">2026</span></div>
-    <div class="org"><div class="logo"><span class="mono">AX</span></div><span class="name">AIRDX</span><span class="role">Robotics SW Intern</span><span class="time">2025 – 2026</span></div>
+    <div class="org"><div class="logo"><img src="media/logo_astrocor.png" alt="Astrocor"></div><span class="name">Astrocor</span><span class="role">Research Intern</span><span class="time">2026 – now</span></div>
+    <div class="org"><div class="logo"><img src="media/logo_adalabs.svg" alt="ADA Labs"></div><span class="name">ADA Labs</span><span class="role">CV Engineer</span><span class="time">2026</span></div>
+    <div class="org"><div class="logo"><img src="media/logo_airdx.png" alt="AIRDX Technologies"></div><span class="name">AIRDX</span><span class="role">Robotics SW Intern</span><span class="time">2025 – 2026</span></div>
   </div>
-
-  <section id="news">
-    <h2>News</h2>
-    <table class="dated news collapsed">
-      <tr><th>Oct, 2026</th><td>Voice-commanded boxing with our G1, live at Venture Café's AI Summit in Monterrey.</td></tr>
-      <tr><th>Sep, 2026</th><td>Joined <strong>Astrocor</strong> as a Research Intern, working on zero-shot object search.</td></tr>
-      <tr><th>Sep, 2026</th><td>1st place at Carrier's “Keep It Cool” hackathon with SentinelBox.</td></tr>
-      <tr><th>Jun, 2026</th><td>Joined <strong>ADA Labs</strong> as their computer vision engineer.</td></tr>
-      <tr><th>Dec, 2025</th><td>Started as a Robotics Software Engineering Intern at <strong>AIRDX</strong>.</td></tr>
-      <tr><th>Aug, 2025</th><td>Founded <strong>VantTec's humanoid team</strong>.</td></tr>
-      <tr><th>May, 2025</th><td>Became captain of VantTec's UAV team.</td></tr>
-    </table>
-    <button class="toggle" type="button" aria-expanded="false">Show all 7</button>
-  </section>
 
   <section id="talks">
     <h2>Publications &amp; Talks</h2>
@@ -68,6 +54,16 @@
         <div class="byline"><strong>Emiliano Méndez Jiménez</strong></div>
         <div class="venue"><b>Venture Café AI Summit</b>, Monterrey, 2026 · talk and live demo</div>
         <div class="links"><a href="media/h_boxing.mp4">Boxing demo</a><a href="media/h_demoday.mp4">Humanoid Demo Day</a></div>
+      </div>
+    </div>
+
+    <div class="entry">
+      <div class="thumb"><img src="media/lars_poster.jpg" width="480" height="480" alt="Our drone flying the marker course at Torneo Mexicano de Robótica" loading="lazy"></div>
+      <div>
+        <div class="title">Marker-Guided Indoor Motion Planning for Micro Aerial Vehicles with Monocular RGB Vision</div>
+        <div class="byline">D. N. Salinas Sánchez, <strong>Emiliano Méndez Jiménez</strong>, H. Castañeda</div>
+        <div class="venue"><b>LARS</b>, 2025 · poster</div>
+        <div class="links"><a href="LARS2025-poster.pdf">Poster</a><a href="media/u_delivery.mp4">Video</a></div>
       </div>
     </div>
   </section>
@@ -172,7 +168,7 @@
         <div class="title">Autonomous Drone Team</div>
         <div class="byline">A 15-person team: 5th place at Torneo Mexicano de Robótica and Monterrey's first drone pizza delivery.</div>
         <div class="venue"><b>VantTec UAV Team</b>, 2025</div>
-        <div class="links"><a href="media/u_delivery.mp4">Video</a></div>
+        <div class="links"><a href="media/u_delivery.mp4">Video</a><a href="LARS2025-poster.pdf">LARS 2025 poster</a></div>
       </div>
     </div>
   </section>
@@ -232,13 +228,6 @@
     for (const e of entries) e.isIntersecting ? e.target.play().catch(() => {}) : e.target.pause();
   }, { threshold: 0.25 });
   document.querySelectorAll('video').forEach(v => io.observe(v));
-
-  const news = document.querySelector('.news'), toggle = document.querySelector('.toggle');
-  toggle.addEventListener('click', () => {
-    const open = news.classList.toggle('collapsed') === false;
-    toggle.textContent = open ? 'Show less' : 'Show all 7';
-    toggle.setAttribute('aria-expanded', open);
-  });
 </script>
 </body>
 </html>

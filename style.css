@@ -45,29 +45,24 @@ p { margin: 0 0 16px; }
 
 /* profile */
 .profile { display: grid; grid-template-columns: 1fr 220px; gap: 40px; align-items: center; }
-.profile h1 { font-size: 36px; line-height: 40px; letter-spacing: -0.025em; text-align: center; margin-bottom: 24px; }
-.profile img { width: 100%; height: auto; aspect-ratio: 4 / 5; object-fit: cover; border-radius: 8px; display: block; }
-.contact { text-align: center; margin: 4px 0 0; }
+.profile h1 { font-size: 36px; line-height: 40px; letter-spacing: -0.025em; margin-bottom: 20px; }
+.profile img { width: 100%; height: auto; aspect-ratio: 4 / 5; object-position: center 30%; object-fit: cover; border-radius: 8px; display: block; }
+.contact { margin: 4px 0 0; }
 .contact a + a::before { content: "·"; display: inline-block; margin: 0 9px; color: var(--ink-3); text-decoration: none; }
 
 /* where I've been */
 .orgs { display: grid; grid-template-columns: repeat(5, minmax(0, 1fr)); gap: 24px; margin-top: 40px; }
-.org .logo { height: 52px; display: flex; align-items: center; }
-.org .logo img { max-height: 48px; max-width: 96px; object-fit: contain; }
-.org .mono { width: 46px; height: 46px; border-radius: 10px; background: var(--bg-2); display: grid; place-items: center; color: var(--ink); font-weight: 600; font-size: 13px; letter-spacing: 0; }
-.org .name { display: block; margin-top: 12px; color: var(--ink); font-weight: 500; }
+/* logos keep their brand colors on a white plate in both themes */
+.org .logo { width: 96px; height: 60px; padding: 8px 10px; border-radius: 10px; background: #ffffff; border: 1px solid var(--rule); display: flex; align-items: center; justify-content: center; }
+.org .logo img { max-width: 100%; max-height: 100%; object-fit: contain; }
+.org .name { display: block; margin-top: 14px; color: var(--ink); font-weight: 500; }
 .org .role, .org .time { display: block; font-size: 13px; line-height: 20px; }
 .org .time { color: var(--ink-3); font-variant-numeric: tabular-nums; }
-@media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) .org .logo img { filter: invert(1) hue-rotate(180deg) brightness(1.15); } }
-:root[data-theme="dark"] .org .logo img { filter: invert(1) hue-rotate(180deg) brightness(1.15); }
 
-/* dated tables: news, honors */
+/* dated table: honors */
 .dated { width: 100%; border-collapse: collapse; }
 .dated th { width: 112px; padding: 8px 16px 8px 0; text-align: left; vertical-align: top; font-weight: 400; font-size: 13px; line-height: 24px; color: var(--ink-3); white-space: nowrap; font-variant-numeric: tabular-nums; }
 .dated td { padding: 8px 0; vertical-align: top; }
-.news.collapsed tr:nth-child(n+7) { display: none; }
-.toggle { margin-top: 12px; padding: 0; border: 0; background: none; font: inherit; font-size: 13px; color: var(--ink-2); text-decoration: underline; text-decoration-color: var(--ink-3); text-underline-offset: 2px; cursor: pointer; }
-.toggle:hover { color: var(--ink); }
 
 /* entries: media left, text right */
 .lead { margin: -8px 0 40px; max-width: 46em; }
