@@ -1,0 +1,109 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>More projects · Emiliano Méndez</title>
+<meta name="description" content="Hackathons, open-source tools and teaching by Emiliano Méndez Jiménez.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='6' fill='%23e4532b'/><text x='16' y='22' font-family='monospace' font-size='16' font-weight='700' fill='white' text-anchor='middle'>EM</text></svg>">
+</head>
+<body>
+
+<div class="bar">
+  <div class="wrap">
+    <a class="name" href="./">Emiliano Méndez</a>
+    <nav>
+      <a href="./">CV</a>
+      <a href="more.html" aria-current="page">More</a>
+    </nav>
+  </div>
+</div>
+
+<main class="wrap">
+  <section class="hero">
+    <h1>More projects</h1>
+    <p>Hackathons, tools and teaching that didn't fit on one page.</p>
+  </section>
+
+  <div class="cards">
+    <article class="card">
+      <div class="ph">1st</div>
+      <div class="body">
+        <h3>SentinelBox</h3>
+        <p>1st place, Carrier hackathon. A neural network scores HVAC health from vibration, current and temperature on an ESP32.</p>
+      </div>
+    </article>
+
+    <article class="card">
+      <video src="media/p_playground.mp4" width="960" height="540" poster="media/p_playground.jpg" muted loop playsinline preload="none"></video>
+      <div class="body">
+        <h3>G1 Playground</h3>
+        <p>MuJoCo pick-and-place starter so new team members can drive the G1 before touching it.</p>
+        <a class="go" href="https://github.com/EMendezJ/G1-Playground">GitHub →</a>
+      </div>
+    </article>
+
+    <article class="card">
+      <video src="media/p_isaaclab.mp4" width="960" height="600" poster="media/p_isaaclab.jpg" muted loop playsinline preload="none"></video>
+      <div class="body">
+        <h3>RL tutorial, LARS 2025</h3>
+        <p>Isaac Lab to PPO to a real Go2, in six hours. Taught twice, 40 attendees.</p>
+        <a class="go" href="https://github.com/EMendezJ/LARS-RL-TUTORIAL">GitHub →</a>
+      </div>
+    </article>
+
+    <article class="card">
+      <div class="ph">CFDI</div>
+      <div class="body">
+        <h3>MiNorte · Banorte hackathon</h3>
+        <p>Snap a receipt; a browser agent files the official invoice on the store's portal.</p>
+      </div>
+    </article>
+
+    <article class="card">
+      <div class="ph">Pip</div>
+      <div class="body">
+        <h3>Pip · North American AI Challenge</h3>
+        <p>Desktop companion that turns a stuck task into next steps, designed with Specialisterne for autistic professionals.</p>
+      </div>
+    </article>
+
+    <article class="card">
+      <div class="ph">SMALC</div>
+      <div class="body">
+        <h3>SMALC robotics course</h3>
+        <p>Volunteer course for 13-year-olds: from Python to autonomous Tello drone missions.</p>
+      </div>
+    </article>
+
+    <article class="card">
+      <div class="ph">⊞</div>
+      <div class="body">
+        <h3>POBRAZN</h3>
+        <p>Multiview browser: many live pages at once, with per-tile audio.</p>
+        <a class="go" href="https://github.com/EMendezJ/POBRAZN">GitHub →</a>
+      </div>
+    </article>
+  </div>
+
+  <footer>
+    <a href="./">← Back to CV</a>
+    <span>Updated Nov 2026</span>
+  </footer>
+</main>
+
+<script>
+  const io = new IntersectionObserver(entries => {
+    for (const e of entries) {
+      if (e.isIntersecting) e.target.play().catch(() => {});
+      else e.target.pause();
+    }
+  }, { threshold: 0.25 });
+  document.querySelectorAll('video').forEach(v => io.observe(v));
+</script>
+</body>
+</html>
