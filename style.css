@@ -111,6 +111,13 @@ a { color: inherit; }
 }
 .media figcaption { margin-top: 6px; font: 400 13px var(--mono); color: var(--muted); }
 
+/* course sessions, in teaching order */
+.steps { display: flex; flex-wrap: wrap; gap: 8px; margin: 0 0 20px; padding: 0; list-style: none; counter-reset: s; }
+.steps li { counter-increment: s; font: 400 13px var(--mono); padding: 5px 10px; border: 1px solid var(--rule); border-radius: 999px; }
+.steps li::before { content: counter(s) " "; color: var(--accent); font-weight: 500; }
+.entry .more { margin: 14px 0 0; font: 500 14px var(--mono); }
+.entry .more a { color: var(--accent); text-decoration: none; }
+
 /* plain list rows (talks, awards) */
 .rows { list-style: none; margin: 16px 0 0; padding: 0; }
 .rows li {
