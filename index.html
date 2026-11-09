@@ -7,167 +7,238 @@
 <meta name="description" content="Robotics student at Tec de Monterrey putting robot-learning research on real humanoids and quadrupeds.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="style.css">
-<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='6' fill='%23e4532b'/><text x='16' y='22' font-family='monospace' font-size='16' font-weight='700' fill='white' text-anchor='middle'>EM</text></svg>">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='7' fill='black'/><text x='16' y='21.5' font-family='sans-serif' font-size='14' font-weight='600' fill='white' text-anchor='middle'>EM</text></svg>">
 </head>
 <body>
+<main>
 
-<div class="bar">
-  <div class="wrap">
-    <a class="name" href="./">Emiliano Méndez</a>
-    <nav>
-      <a href="./" aria-current="page">CV</a>
-      <a href="more.html">More</a>
-    </nav>
+  <div class="profile">
+    <div>
+      <h1>Emiliano Méndez Jiménez</h1>
+      <p>I'm a Robotics and Digital Systems undergraduate at <a href="https://tec.mx">Tecnológico de Monterrey</a>. I founded and lead the humanoid team at <a href="https://www.vanttec.com">VantTec</a>, and I'm a Research Intern at Astrocor, working on zero-shot object search for legged robots. Previously, I was the only computer vision engineer at ADA Labs and a robotics software intern at AIRDX.</p>
+      <p>I like taking robot-learning research off the paper and onto real hardware: behavior foundation models and motion tracking on a <strong>Unitree G1</strong>, open-vocabulary navigation on a <strong>DEEP Robotics Lite3</strong>. I'm looking for a <strong>research stay or internship in 2027</strong>.</p>
+      <p class="contact">
+        <a href="mailto:emeji2016@outlook.com">Email</a><a href="EmilianoMendez-CV.pdf">CV</a><a href="https://linkedin.com/in/emilianomendezjimenez">LinkedIn</a><a href="https://github.com/EMendezJ">GitHub</a>
+      </p>
+    </div>
+    <div class="photo"><img src="media/profile.jpg" width="576" height="720" alt="Our Unitree G1, in a hoodie and gloves, throwing a punch"></div>
   </div>
-</div>
 
-<main class="wrap">
+  <div class="orgs">
+    <div class="org"><div class="logo"><img src="media/logo_tec.png" alt="Tecnológico de Monterrey"></div><span class="name">Tec de Monterrey</span><span class="role">B.S. Robotics</span><span class="time">2024 – 2028</span></div>
+    <div class="org"><div class="logo"><img src="media/logo_vanttec.png" alt="VantTec"></div><span class="name">VantTec</span><span class="role">Humanoid Captain</span><span class="time">2025 – now</span></div>
+    <div class="org"><div class="logo"><span class="mono">AC</span></div><span class="name">Astrocor</span><span class="role">Research Intern</span><span class="time">2026 – now</span></div>
+    <div class="org"><div class="logo"><span class="mono">ADA</span></div><span class="name">ADA Labs</span><span class="role">CV Engineer</span><span class="time">2026</span></div>
+    <div class="org"><div class="logo"><span class="mono">AX</span></div><span class="name">AIRDX</span><span class="role">Robotics SW Intern</span><span class="time">2025 – 2026</span></div>
+  </div>
 
-  <section class="hero">
-    <h1>Emiliano Méndez Jiménez</h1>
-    <p>Robotics student at Tec de Monterrey. I put recent robot-learning research on <b>real hardware</b>: a Unitree G1 humanoid and a Lite3 quadruped.</p>
-    <div class="links">
-      <a class="primary" href="EmilianoMendez-CV.pdf">CV (PDF)</a>
-      <a href="https://github.com/EMendezJ">GitHub</a>
-      <a href="https://linkedin.com/in/emilianomendezjimenez">LinkedIn</a>
-      <a href="mailto:emeji2016@outlook.com">Email</a>
+  <section id="news">
+    <h2>News</h2>
+    <table class="dated news collapsed">
+      <tr><th>Oct, 2026</th><td>Voice-commanded boxing with our G1, live at Venture Café's AI Summit in Monterrey.</td></tr>
+      <tr><th>Sep, 2026</th><td>Joined <strong>Astrocor</strong> as a Research Intern, working on zero-shot object search.</td></tr>
+      <tr><th>Sep, 2026</th><td>1st place at Carrier's “Keep It Cool” hackathon with SentinelBox.</td></tr>
+      <tr><th>Jun, 2026</th><td>Joined <strong>ADA Labs</strong> as their computer vision engineer.</td></tr>
+      <tr><th>Dec, 2025</th><td>Started as a Robotics Software Engineering Intern at <strong>AIRDX</strong>.</td></tr>
+      <tr><th>Aug, 2025</th><td>Founded <strong>VantTec's humanoid team</strong>.</td></tr>
+      <tr><th>May, 2025</th><td>Became captain of VantTec's UAV team.</td></tr>
+    </table>
+    <button class="toggle" type="button" aria-expanded="false">Show all 7</button>
+  </section>
+
+  <section id="talks">
+    <h2>Publications &amp; Talks</h2>
+
+    <div class="entry">
+      <div class="thumb"><video src="media/t_go2.mp4" poster="media/t_go2.jpg" muted loop playsinline preload="none"></video></div>
+      <div>
+        <div class="title"><mark>Bridging the Educational Gap in Robotics: A Hands-on Tutorial Framework for Reinforcement Learning</mark></div>
+        <div class="byline"><strong>Emiliano Méndez Jiménez</strong>, M. Caballero, G. De Los Ríos Alatorre, N. Nieto Gutiérrez, J. J. Martínez-Hernández, H. A. Ramírez-Vázquez, A. E. Cerón-López</div>
+        <div class="venue"><b>IEEE/SICE SII</b>, 2026 · poster on our 6-hour tutorial at LARS 2025</div>
+        <div class="links"><a href="SII2026-poster.pdf">Poster</a><a href="https://github.com/EMendezJ/LARS-RL-TUTORIAL">Code ★ 7</a><a href="media/t_go2.mp4">Video</a></div>
+      </div>
+    </div>
+
+    <div class="entry">
+      <div class="thumb"><video src="media/h_demoday.mp4" poster="media/h_demoday.jpg" muted loop playsinline preload="none"></video></div>
+      <div>
+        <div class="title">Physical AI, Live: Humanoid and Quadruped Demos</div>
+        <div class="byline"><strong>Emiliano Méndez Jiménez</strong></div>
+        <div class="venue"><b>Venture Café AI Summit</b>, Monterrey, 2026 · talk and live demo</div>
+        <div class="links"><a href="media/h_boxing.mp4">Boxing demo</a><a href="media/h_demoday.mp4">Humanoid Demo Day</a></div>
+      </div>
     </div>
   </section>
 
-  <ul class="toc">
-    <li><a href="#humanoid">Humanoid team<span>VantTec · 2025–now</span></a></li>
-    <li><a href="#astrocor">Research intern<span>Astrocor · 2026–now</span></a></li>
-    <li><a href="#adalabs">Computer vision<span>ADA Labs · 2026</span></a></li>
-    <li><a href="#airdx">Drone inspection<span>AIRDX · 2025–26</span></a></li>
-    <li><a href="#uav">UAV team<span>VantTec · 2025</span></a></li>
-    <li><a href="#smalc">Teaching kids<span>SMALC · 2025–now</span></a></li>
-    <li><a href="#talks">Talks &amp; awards<span>2025–26</span></a></li>
-  </ul>
+  <section id="work">
+    <h2>Robot Learning &amp; Perception</h2>
+    <p class="lead">I work where <strong>robot learning</strong>, <strong>perception</strong> and <strong>real hardware</strong> meet: getting recent methods to run onboard, in closed loop, on robots that can fall over.</p>
 
-  <section class="entry" id="humanoid">
-    <header>
-      <h2>Humanoid Team Captain &amp; Founder <small>· VantTec</small></h2>
-      <time>Aug 2025 – now</time>
-    </header>
-    <p class="what">Founded the campus's first humanoid team (18 people). On our Unitree G1: <em>BFM-Zero</em> run by voice, boxing by motion tracking, and XR teleop for VLA data.</p>
-    <div class="media">
-      <figure><video src="media/h_boxing.mp4" width="406" height="720" poster="media/h_boxing.jpg" muted loop playsinline preload="none"></video><figcaption>Boxing on the real G1</figcaption></figure>
-      <figure><video src="media/h_demoday.mp4" width="406" height="720" poster="media/h_demoday.jpg" muted loop playsinline preload="none"></video><figcaption>Humanoid Demo Day</figcaption></figure>
-      <figure><video src="media/h_voice.mp4" width="402" height="720" poster="media/h_voice.jpg" muted loop playsinline preload="none"></video><figcaption>Voice agent, onboard</figcaption></figure>
-      <figure><video src="media/h_box.mp4" width="640" height="480" poster="media/h_box.jpg" muted loop playsinline preload="none"></video><figcaption>Boxing tracker, sim check</figcaption></figure>
-      <figure><video src="media/h_retarget.mp4" width="960" height="540" poster="media/h_retarget.jpg" muted loop playsinline preload="none"></video><figcaption>Human video → 3D pose → G1</figcaption></figure>
-      <figure><video src="media/h_teleop.mp4" width="402" height="720" poster="media/h_teleop.jpg" muted loop playsinline preload="none"></video><figcaption>XR teleop, dexterous hands</figcaption></figure>
-      <figure><video src="media/h_bci.mp4" width="404" height="720" poster="media/h_bci.jpg" muted loop playsinline preload="none"></video><figcaption>EEG motor imagery → grasp</figcaption></figure>
+    <div class="entry" id="humanoid">
+      <div class="thumb"><video src="media/h_boxing.mp4" poster="media/h_boxing.jpg" muted loop playsinline preload="none"></video></div>
+      <div>
+        <div class="title"><mark>Voice-Commanded Boxing on a Unitree G1</mark></div>
+        <div class="byline">A BeyondMimic-style tracking policy trained in mjlab on 8 strikes, with a supervisor that holds guard between punches.</div>
+        <div class="venue"><b>VantTec Humanoid Team</b>, 2026</div>
+        <div class="links"><a href="media/h_boxing.mp4">Video</a></div>
+      </div>
+    </div>
+
+    <div class="entry">
+      <div class="thumb"><video src="media/h_voice.mp4" poster="media/h_voice.jpg" muted loop playsinline preload="none"></video></div>
+      <div>
+        <div class="title">BFM-Zero Onboard, Driven by Voice</div>
+        <div class="byline">A behavior foundation model on the G1's Jetson Orin NX; an LLM agent turns speech into whole-body behaviors.</div>
+        <div class="venue"><b>VantTec Humanoid Team</b>, 2026</div>
+        <div class="links"><a href="media/h_voice.mp4">Video</a><a href="https://github.com/LeCAR-Lab/BFM-Zero">Original method</a></div>
+      </div>
+    </div>
+
+    <div class="entry">
+      <div class="thumb"><video src="media/h_retarget.mp4" poster="media/h_retarget.jpg" muted loop playsinline preload="none"></video></div>
+      <div>
+        <div class="title">From a Phone Video to Humanoid Motion</div>
+        <div class="byline">3D human pose with GEM-X, retargeting to the G1, and a sim-to-sim check in MuJoCo before the robot moves.</div>
+        <div class="venue"><b>VantTec Humanoid Team</b>, 2026</div>
+        <div class="links"><a href="media/h_retarget.mp4">Video</a></div>
+      </div>
+    </div>
+
+    <div class="entry">
+      <div class="thumb"><video src="media/h_teleop.mp4" poster="media/h_teleop.jpg" muted loop playsinline preload="none"></video></div>
+      <div>
+        <div class="title">XR Teleoperation for VLA Data</div>
+        <div class="byline">Meta Quest 3 and dexterous hands; both arms and hands recorded at 100 Hz for vision-language-action training.</div>
+        <div class="venue"><b>VantTec Humanoid Team</b>, 2026</div>
+        <div class="links"><a href="media/h_teleop.mp4">Video</a></div>
+      </div>
+    </div>
+
+    <div class="entry">
+      <div class="thumb"><video src="media/h_bci.mp4" poster="media/h_bci.jpg" muted loop playsinline preload="none"></video></div>
+      <div>
+        <div class="title">EEG Motor Imagery to Robot Grasps</div>
+        <div class="byline">Six grasp types decoded from motor imagery and sent to the robot over a DDS/ROS 2 bridge, with BCI researchers from Cinvestav.</div>
+        <div class="venue"><b>VantTec Humanoid Team</b>, 2025 – 2026</div>
+        <div class="links"><a href="media/h_bci.mp4">Video</a></div>
+      </div>
+    </div>
+
+    <div class="entry" id="astrocor">
+      <div class="thumb"><video src="media/a_onemap.mp4" poster="media/a_onemap.jpg" muted loop playsinline preload="none"></video></div>
+      <div>
+        <div class="title"><mark>Zero-Shot Object Search on a Quadruped</mark></div>
+        <div class="byline">OneMap (KTH, ICRA 2025) onboard a DEEP Robotics Lite3: FP16 CLIP, YOLOv7 and MobileSAM on a Jetson AGX Orin, in closed loop.</div>
+        <div class="venue"><b>Astrocor</b>, 2026</div>
+        <div class="links"><a href="media/a_onemap.mp4">Video</a><a href="https://github.com/KTH-RPL/OneMap">Original method</a></div>
+      </div>
+    </div>
+
+    <div class="entry">
+      <div class="thumb"><video src="media/a_bench.mp4" poster="media/a_bench.jpg" muted loop playsinline preload="none"></video></div>
+      <div>
+        <div class="title">A Fair Benchmark for Robot Memory</div>
+        <div class="byline">OneMap vs NVIDIA's ReMEmbR in Astrocor's photorealistic simulator: same scenes, start poses and metrics.</div>
+        <div class="venue"><b>Astrocor</b>, 2026</div>
+        <div class="links"><a href="media/a_bench.mp4">Video</a><a href="https://github.com/NVIDIA-AI-IOT/remembr">ReMEmbR</a></div>
+      </div>
+    </div>
+
+    <div class="entry" id="adalabs">
+      <div class="thumb"><video src="media/d_reel.mp4" poster="media/d_reel.jpg" muted loop playsinline preload="none"></video></div>
+      <div>
+        <div class="title"><mark>Counting Tomatoes from a Greenhouse Robot</mark></div>
+        <div class="byline">YOLOv8 + ByteTrack fused with the robot's pose and camera extrinsics: 96% count accuracy, about 1,200 tomatoes per row.</div>
+        <div class="venue"><b>ADA Labs</b>, 2026</div>
+        <div class="links"><a href="media/d_reel.mp4">Video</a><a href="media/d_row.mp4">Row patrol</a></div>
+      </div>
+    </div>
+
+    <div class="entry" id="airdx">
+      <div class="thumb"><video src="media/x_lidar.mp4" poster="media/x_lidar.jpg" muted loop playsinline preload="none"></video></div>
+      <div>
+        <div class="title">GPS-Denied Aircraft Inspection Drone</div>
+        <div class="byline">Point-LIO LiDAR-inertial odometry as the flight controller's position source, plus a YOLO lightning-strike damage detector.</div>
+        <div class="venue"><b>AIRDX</b>, 2025 – 2026</div>
+        <div class="links"><a href="media/x_lidar.mp4">Video</a><a href="media/x_flight.mp4">Flight around the aircraft</a></div>
+      </div>
+    </div>
+
+    <div class="entry" id="uav">
+      <div class="thumb"><video src="media/u_delivery.mp4" poster="media/u_delivery.jpg" muted loop playsinline preload="none"></video></div>
+      <div>
+        <div class="title">Autonomous Drone Team</div>
+        <div class="byline">A 15-person team: 5th place at Torneo Mexicano de Robótica and Monterrey's first drone pizza delivery.</div>
+        <div class="venue"><b>VantTec UAV Team</b>, 2025</div>
+        <div class="links"><a href="media/u_delivery.mp4">Video</a></div>
+      </div>
     </div>
   </section>
 
-  <section class="entry" id="astrocor">
-    <header>
-      <h2>Research Intern <small>· Astrocor</small></h2>
-      <time>Sep 2026 – now</time>
-    </header>
-    <p class="what">Zero-shot object search on a quadruped: <em>OneMap</em> running onboard a Lite3, and a fair benchmark against NVIDIA's ReMEmbR.</p>
-    <div class="media">
-      <figure><video src="media/a_onemap.mp4" width="960" height="538" poster="media/a_onemap.jpg" muted loop playsinline preload="none"></video><figcaption>OneMap looking for a chair</figcaption></figure>
-      <figure><video src="media/a_bench.mp4" width="960" height="540" poster="media/a_bench.jpg" muted loop playsinline preload="none"></video><figcaption>OneMap vs ReMEmbR, same tour</figcaption></figure>
+  <section id="smalc">
+    <h2>Teaching</h2>
+    <p class="lead">I co-teach <strong>SMALC</strong>, VantTec's volunteer robotics course for 13-year-olds: from their first line of Python to a Tello drone that flies through a gate on its own.</p>
+    <div class="grid two">
+      <div class="card">
+        <div class="media"><img src="media/smalc_s4.jpg" width="1200" height="636" alt="Slide: the rally's final challenge, tracking an object left, center or right" loading="lazy"></div>
+        <h3>Vision rally</h3>
+        <div class="where">SMALC · Session 4</div>
+        <p>Six OpenCV puzzles; the boss level keeps a moving object centered.</p>
+        <div class="links"><a href="https://github.com/DiegoGalloM/SMALC-AD26/tree/master/sesion-04-opencv-rally">Materials</a></div>
+      </div>
+      <div class="card">
+        <div class="media"><img src="media/smalc_s6.jpg" width="1200" height="636" alt="Slide: visual servoing, the drone turns toward a green dot" loading="lazy"></div>
+        <h3>A drone that follows a color</h3>
+        <div class="where">SMALC · Session 6</div>
+        <p>Visual servoing: the error in the image becomes the drone's velocity.</p>
+        <div class="links"><a href="https://github.com/DiegoGalloM/SMALC-AD26/tree/master/sesion-06-visual-servoing">Materials</a></div>
+      </div>
+      <div class="card">
+        <div class="media"><img src="media/smalc_s7.jpg" width="1200" height="636" alt="Slide: state machine for a three-person rescue mission" loading="lazy"></div>
+        <h3>The rescue-mission brain</h3>
+        <div class="where">SMALC · Session 7</div>
+        <p>State machines that decide what the drone does next.</p>
+        <div class="links"><a href="https://github.com/DiegoGalloM/SMALC-AD26/tree/master/sesion-07-maquinas-de-estados">Materials</a></div>
+      </div>
+      <div class="card">
+        <div class="media"><img src="media/smalc_s8.jpg" width="1200" height="636" alt="Slide: gates, slalom and finding Blue" loading="lazy"></div>
+        <h3>Three tasks to rescue Blue</h3>
+        <div class="where">SMALC · Session 8</div>
+        <p>Vision, control and a state machine fly the drone through the gate.</p>
+        <div class="links"><a href="https://github.com/DiegoGalloM/SMALC-AD26/tree/master/sesion-08-integracion">Materials</a></div>
+      </div>
     </div>
   </section>
 
-  <section class="entry" id="adalabs">
-    <header>
-      <h2>Computer Vision Engineer <small>· ADA Labs</small></h2>
-      <time>Jun – Sep 2026</time>
-    </header>
-    <p class="what">Counting tomatoes from a greenhouse robot at <em>96% accuracy</em>, without counting any of them twice.</p>
-    <div class="media">
-      <figure><video src="media/d_reel.mp4" width="720" height="406" poster="media/d_reel.jpg" muted loop playsinline preload="none"></video><figcaption>Detect, track, count</figcaption></figure>
-      <figure><video src="media/d_row.mp4" width="720" height="406" poster="media/d_row.jpg" muted loop playsinline preload="none"></video><figcaption>One row patrol</figcaption></figure>
-    </div>
-  </section>
-
-  <section class="entry" id="airdx">
-    <header>
-      <h2>Robotics Software Intern <small>· AIRDX</small></h2>
-      <time>Dec 2025 – Mar 2026</time>
-    </header>
-    <p class="what">A drone that inspects aircraft <em>indoors, without GPS</em>, localized by LiDAR-inertial odometry.</p>
-    <div class="media">
-      <figure><video src="media/x_flight.mp4" width="408" height="720" poster="media/x_flight.jpg" muted loop playsinline preload="none"></video><figcaption>Flight around the aircraft, sim</figcaption></figure>
-      <figure><video src="media/x_lidar.mp4" width="960" height="600" poster="media/x_lidar.jpg" muted loop playsinline preload="none"></video><figcaption>LiDAR inspection mission, sim</figcaption></figure>
-    </div>
-  </section>
-
-  <section class="entry" id="uav">
-    <header>
-      <h2>UAV Team Captain <small>· VantTec</small></h2>
-      <time>May – Dec 2025</time>
-    </header>
-    <p class="what">15-person drone team. <em>5th place</em> at Torneo Mexicano de Robótica and Monterrey's first drone pizza delivery.</p>
-    <div class="media">
-      <figure><video src="media/u_delivery.mp4" width="960" height="540" poster="media/u_delivery.jpg" muted loop playsinline preload="none"></video><figcaption>Delivery flight</figcaption></figure>
-    </div>
-  </section>
-
-  <section class="entry" id="smalc">
-    <header>
-      <h2>Volunteer Instructor <small>· SMALC, VantTec Outreach</small></h2>
-      <time>Aug 2025 – now</time>
-    </header>
-    <p class="what">Robotics for 13-year-olds: from their first line of Python to a <em>Tello drone</em> that flies through a gate on its own.</p>
-    <ol class="steps">
-      <li>Python, Git, OpenCV, YOLO</li>
-      <li>Meet the Tello</li>
-      <li>Vision rally</li>
-      <li>PID control</li>
-      <li>Visual servoing</li>
-      <li>State machines</li>
-      <li>Gate challenge</li>
-    </ol>
-    <div class="media">
-      <figure><img src="media/smalc_s2.jpg" width="1200" height="636" alt="Slide: detect a tomato by color and draw a target around it" loading="lazy"><figcaption>Session 2: find the tomato with HSV</figcaption></figure>
-      <figure><img src="media/smalc_s4.jpg" width="1200" height="636" alt="Slide: the final rally challenge, tracking an object left, center or right" loading="lazy"><figcaption>Session 4: rally boss, keep it centered</figcaption></figure>
-      <figure><img src="media/smalc_s6.jpg" width="1200" height="636" alt="Slide: visual servoing, the drone turns toward a green dot" loading="lazy"><figcaption>Session 6: a drone that follows a color</figcaption></figure>
-      <figure><img src="media/smalc_s7.jpg" width="1200" height="636" alt="Slide: state machine for a three-person rescue mission" loading="lazy"><figcaption>Session 7: the rescue mission brain</figcaption></figure>
-      <figure><img src="media/smalc_s8.jpg" width="1200" height="636" alt="Slide: gates, slalom and finding Blue" loading="lazy"><figcaption>Session 8: three tasks to rescue Blue</figcaption></figure>
-    </div>
-    <p class="more"><a href="https://github.com/DiegoGalloM/SMALC-AD26">Course materials on GitHub →</a></p>
-  </section>
-
-  <section class="entry" id="talks">
-    <header>
-      <h2>Talks, papers &amp; awards</h2>
-      <time>2025 – 2026</time>
-    </header>
-    <ul class="rows">
-      <li><span class="tag">Oct 2026</span><span>Physical AI, live: humanoid and quadruped demos · Venture Café AI Summit</span></li>
-      <li><span class="tag">Sep 2026</span><span>1st place, Carrier “Keep It Cool” hackathon · SentinelBox</span></li>
-      <li><span class="tag">2026</span><span><a href="SII2026-poster.pdf">Bridging the Educational Gap in Robotics</a> · poster with 6 co-authors, IEEE/SICE SII 2026</span></li>
-      <li><span class="tag">2025</span><span><a href="https://github.com/EMendezJ/LARS-RL-TUTORIAL">Hands-on RL for legged robots</a> · 6-hour tutorial, LARS 2025</span></li>
-    </ul>
-    <div class="media" style="margin-top:20px">
-      <figure><img src="media/s_award.jpg" width="900" height="560" alt="The SentinelBox team holding the 1st place check at Carrier's hackathon" loading="lazy"><figcaption>1st place, Carrier hackathon</figcaption></figure>
-      <figure><video src="media/s_sentinel.mp4" width="406" height="720" poster="media/s_sentinel.jpg" muted loop playsinline preload="none"></video><figcaption>SentinelBox: knock it, it flags vibration</figcaption></figure>
-      <figure><video src="media/t_go2.mp4" width="460" height="720" poster="media/t_go2.jpg" muted loop playsinline preload="none"></video><figcaption>Tutorial finale: policy on a real Go2</figcaption></figure>
-    </div>
+  <section id="honors">
+    <h2>Honors</h2>
+    <table class="dated">
+      <tr><th>Sep, 2026</th><td>1st place, Carrier “Keep It Cool” Hackathon, with SentinelBox: neural-network HVAC health monitoring. <a href="media/s_award.jpg">Photo</a> · <a href="media/s_sentinel.mp4">Demo</a></td></tr>
+      <tr><th>2025</th><td>5th place, Autonomous Drone category, Torneo Mexicano de Robótica</td></tr>
+    </table>
   </section>
 
   <footer>
-    <span>Updated Nov 2026</span>
+    <span>Emiliano Méndez Jiménez © 2026 | Last updated Nov 2026</span>
     <a href="more.html">More projects →</a>
   </footer>
 </main>
 
 <script>
-  // play clips only while they are on screen
+  // clips play only while on screen
   const io = new IntersectionObserver(entries => {
-    for (const e of entries) {
-      if (e.isIntersecting) e.target.play().catch(() => {});
-      else e.target.pause();
-    }
+    for (const e of entries) e.isIntersecting ? e.target.play().catch(() => {}) : e.target.pause();
   }, { threshold: 0.25 });
   document.querySelectorAll('video').forEach(v => io.observe(v));
+
+  const news = document.querySelector('.news'), toggle = document.querySelector('.toggle');
+  toggle.addEventListener('click', () => {
+    const open = news.classList.toggle('collapsed') === false;
+    toggle.textContent = open ? 'Show less' : 'Show all 7';
+    toggle.setAttribute('aria-expanded', open);
+  });
 </script>
 </body>
 </html>

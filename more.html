@@ -3,98 +3,74 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>More projects · Emiliano Méndez</title>
-<meta name="description" content="Hackathons, open-source tools and teaching by Emiliano Méndez Jiménez.">
+<title>More projects · Emiliano Méndez Jiménez</title>
+<meta name="description" content="Hackathons and side projects by Emiliano Méndez Jiménez.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="style.css">
-<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='6' fill='%23e4532b'/><text x='16' y='22' font-family='monospace' font-size='16' font-weight='700' fill='white' text-anchor='middle'>EM</text></svg>">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='7' fill='black'/><text x='16' y='21.5' font-family='sans-serif' font-size='14' font-weight='600' fill='white' text-anchor='middle'>EM</text></svg>">
 </head>
 <body>
+<main>
+  <p><a href="./">← Emiliano Méndez Jiménez</a></p>
 
-<div class="bar">
-  <div class="wrap">
-    <a class="name" href="./">Emiliano Méndez</a>
-    <nav>
-      <a href="./">CV</a>
-      <a href="more.html" aria-current="page">More</a>
-    </nav>
-  </div>
-</div>
-
-<main class="wrap">
-  <section class="hero">
-    <h1>More projects</h1>
-    <p>Hackathons, tools and teaching that didn't fit on one page.</p>
-  </section>
-
-  <div class="cards">
-    <article class="card">
-      <video class="fit" src="media/s_sentinel.mp4" width="406" height="720" poster="media/s_sentinel.jpg" muted loop playsinline preload="none"></video>
-      <div class="body">
+  <section style="margin-top:32px">
+    <h2>More Projects</h2>
+    <p class="lead">Hackathons and tools that are not on my CV.</p>
+    <div class="grid">
+      <div class="card">
+        <div class="media"><img src="media/s_award.jpg" width="900" height="560" alt="The SentinelBox team holding the 1st place check" loading="lazy"></div>
         <h3>SentinelBox</h3>
-        <p>1st place, Carrier hackathon. A neural network scores HVAC health from vibration, current and temperature on an ESP32.</p>
+        <div class="where">Carrier hackathon, 2026 · 1st place</div>
+        <p>A neural network scores HVAC health from vibration, current and temperature on an ESP32.</p>
+        <div class="links"><a href="media/s_sentinel.mp4">Demo</a></div>
       </div>
-    </article>
-
-    <article class="card">
-      <video src="media/p_playground.mp4" width="960" height="540" poster="media/p_playground.jpg" muted loop playsinline preload="none"></video>
-      <div class="body">
+      <div class="card">
+        <div class="media"><video src="media/p_playground.mp4" poster="media/p_playground.jpg" muted loop playsinline preload="none"></video></div>
         <h3>G1 Playground</h3>
-        <p>MuJoCo pick-and-place starter so new team members can drive the G1 before touching it.</p>
-        <a class="go" href="https://github.com/EMendezJ/G1-Playground">GitHub →</a>
+        <div class="where">VantTec, 2026</div>
+        <p>MuJoCo pick-and-place starter so new members can drive the G1 before touching it.</p>
+        <div class="links"><a href="https://github.com/EMendezJ/G1-Playground">Code</a></div>
       </div>
-    </article>
-
-    <article class="card">
-      <video src="media/p_isaaclab.mp4" width="960" height="600" poster="media/p_isaaclab.jpg" muted loop playsinline preload="none"></video>
-      <div class="body">
-        <h3>RL tutorial, LARS 2025</h3>
-        <p>Isaac Lab to PPO to a real Go2, in six hours. Taught twice, 40 attendees.</p>
-        <a class="go" href="https://github.com/EMendezJ/LARS-RL-TUTORIAL">GitHub →</a>
+      <div class="card">
+        <div class="media"><video src="media/p_isaaclab.mp4" poster="media/p_isaaclab.jpg" muted loop playsinline preload="none"></video></div>
+        <h3>RL in Isaac Lab</h3>
+        <div class="where">LARS 2025 tutorial</div>
+        <p>Training locomotion with PPO for the tutorial's sim-to-real finale on a Go2.</p>
+        <div class="links"><a href="https://github.com/EMendezJ/LARS-RL-TUTORIAL">Code</a></div>
       </div>
-    </article>
-
-    <article class="card">
-      <div class="ph">CFDI</div>
-      <div class="body">
-        <h3>MiNorte · Banorte hackathon</h3>
+      <div class="card">
+        <div class="media">CFDI</div>
+        <h3>MiNorte</h3>
+        <div class="where">Banorte hackathon, 2026</div>
         <p>Snap a receipt; a browser agent files the official invoice on the store's portal.</p>
       </div>
-    </article>
-
-    <article class="card">
-      <div class="ph">Pip</div>
-      <div class="body">
-        <h3>Pip · North American AI Challenge</h3>
-        <p>Desktop companion that turns a stuck task into next steps, designed with Specialisterne for autistic professionals.</p>
+      <div class="card">
+        <div class="media">Pip</div>
+        <h3>Pip</h3>
+        <div class="where">North American AI Challenge, 2026</div>
+        <p>A desktop companion that turns a stuck task into next steps, designed with Specialisterne.</p>
       </div>
-    </article>
-
-
-    <article class="card">
-      <div class="ph">⊞</div>
-      <div class="body">
+      <div class="card">
+        <div class="media">⊞</div>
         <h3>POBRAZN</h3>
+        <div class="where">Side project, 2026</div>
         <p>Multiview browser: many live pages at once, with per-tile audio.</p>
-        <a class="go" href="https://github.com/EMendezJ/POBRAZN">GitHub →</a>
+        <div class="links"><a href="https://github.com/EMendezJ/POBRAZN">Code</a></div>
       </div>
-    </article>
-  </div>
+    </div>
+  </section>
 
   <footer>
-    <a href="./">← Back to CV</a>
-    <span>Updated Nov 2026</span>
+    <span>Emiliano Méndez Jiménez © 2026 | Last updated Nov 2026</span>
+    <a href="./">← Back</a>
   </footer>
 </main>
 
 <script>
   const io = new IntersectionObserver(entries => {
-    for (const e of entries) {
-      if (e.isIntersecting) e.target.play().catch(() => {});
-      else e.target.pause();
-    }
+    for (const e of entries) e.isIntersecting ? e.target.play().catch(() => {}) : e.target.pause();
   }, { threshold: 0.25 });
   document.querySelectorAll('video').forEach(v => io.observe(v));
 </script>
