@@ -85,6 +85,7 @@ p { margin: 0 0 16px; }
 .card .where { font-size: 13px; line-height: 20px; color: var(--ink-3); }
 .card p { font-size: 13px; line-height: 20px; margin: 6px 0 0; }
 .card .links { font-size: 13px; }
+.grid.three { grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 32px 24px; }
 /* small supporting thumbnails, aligned with the entry text */
 .minis { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 16px; margin: -12px 0 0 264px; }
 .minis .card .media { aspect-ratio: 16 / 9; border-radius: 6px; }
@@ -104,7 +105,7 @@ footer { margin-top: 72px; font-size: 13px; color: var(--ink-3); display: flex; 
   .profile { grid-template-columns: 1fr; gap: 24px; }
   .profile .photo { order: -1; max-width: 220px; margin: 0 auto; }
   .orgs { grid-template-columns: repeat(2, minmax(0, 1fr)); }
-  .grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .grid, .grid.three { grid-template-columns: repeat(2, minmax(0, 1fr)); }
 }
 @media (max-width: 560px) {
   main { padding: 32px 16px 48px; }
