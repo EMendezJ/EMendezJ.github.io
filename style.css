@@ -77,6 +77,8 @@ p { margin: 0 0 16px; }
 .links { margin-top: 8px; }
 .links a + a::before { content: "·"; display: inline-block; margin: 0 9px; color: var(--ink-3); }
 
+.team-code { margin: -8px 0 40px 264px; font-size: 14px; }
+
 /* grid of cards: teaching, more projects */
 .grid { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 20px; }
 .card .media { aspect-ratio: 1 / 1; border-radius: 8px; overflow: hidden; background: var(--bg-2); display: grid; place-items: center; color: var(--ink); font-weight: 600; font-size: 22px; }
@@ -116,6 +118,7 @@ footer { margin-top: 72px; font-size: 13px; color: var(--ink-3); display: flex; 
   .poster img { width: 56px; }
   .poster span { margin: 0; }
   .minis { margin-left: 0; grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .team-code { margin-left: 0; }
   .dated th { width: 84px; }
 }
 @media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
